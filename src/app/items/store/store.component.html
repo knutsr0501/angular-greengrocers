@@ -1,0 +1,13 @@
+<button (click)="sortAlphabet()">Sort alphabetically</button>
+<button (click)="sortByPrice()">Sort by price</button>
+<button (click)="filterFruits()">Show only fruits</button>
+<button (click)="filterVegetable()">Show only vegetables</button>
+<button (click)="showAll()">Show all</button>
+<ul class="item-list store--item-list">
+  <li *ngFor="let item of displayedItems">
+    <div class="store--item-icon">
+      <img src="assets/icons/{{ item.id }}.svg" alt="{{ item.name }}" />
+    </div>
+    <button (click)="addToCart(item.id)">Add to cart</button>
+  </li>
+</ul>
