@@ -191,6 +191,9 @@ app-total {
   align-items: center;
 }
 
+.pay-div {
+  padding-left: 10px;
+}
 .total-number {
   font-weight: bold;
 }

@@ -5,3 +5,8 @@
 <div>
   <span class="total-number">{{ itemService.total | currency : "GBP" }}</span>
 </div>
+<ng-template [ngIf]="itemService.total !== 0">
+  <div class="pay-div">
+    <p><a routerLink="/checkout">Pay</a></p>
+  </div>
+</ng-template>
