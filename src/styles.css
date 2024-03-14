@@ -21,10 +21,7 @@ button {
 /* Store */
 
 #store {
-  height: 40vh;
-  padding: 1rem;
-
-  overflow-y: scroll;
+  min-height: 200px;
 
   background-color: #e7f4ea;
 }
@@ -88,6 +85,25 @@ app-cart {
 
   border-radius: 0.5rem;
   border: 2px solid #757575;
+}
+.cart-list-div {
+  border: 2px solid #050505;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.show-all-btn {
+  border-right: 3px solid darkgray;
+  margin-right: 10px;
+}
+.filter-div button {
+  margin-right: 10px;
+}
+.filter-div {
+  border: 2px dotted #d7cdcd;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
 }
 
 #cart h2 {
@@ -170,10 +186,8 @@ app-cart {
 /* Total */
 
 app-total {
-  padding: 0.5rem 1rem;
-
-  display: grid;
-  grid-template-columns: 1fr auto;
+  padding-left: 10px;
+  display: flex;
   align-items: center;
 }
 

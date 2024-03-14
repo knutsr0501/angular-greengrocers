@@ -33,6 +33,7 @@ export class StoreComponent {
 
   filterFruits() {
     const newArray: Item[] = [];
+    //Using filterItems to not mess with displayedItems
     for (const item of this.filterItems) {
       if (item.type === 'fruit') {
         newArray.push(item);
